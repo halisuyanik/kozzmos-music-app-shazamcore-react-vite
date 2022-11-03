@@ -19,7 +19,6 @@ const Discover = () => {
     const genreTitle=genres.find(({value})=>value===genreListId)?.title;
     if(isFetching) return <Loader title="Yükleniyor..."/>
     if(error) return <Error></Error>
-    console.log(data);
     return(
         <div className='flex flex-col'>
             <div className='w-full flex justify-between items-center flex-col mb-10 mt-4 sm:flex-row'>

@@ -25,7 +25,7 @@ const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen]=useState(false);
   return(<>
    <div className='md:flex hidden flex-col w-[240px] py-10 px-4  bg-green'>
-   <p className='text-white '>KOZZMOS</p>
+   <p className='text-white px-4 text-3xl'>KOZZMOS</p>
     <NavLinks></NavLinks>
    </div>
 
@@ -38,7 +38,7 @@ const Sidebar = () => {
    <div className={`absolute top-0 h-screen w-2/3 bg-gradient-to-tl
     from-white/10 to-[#064e3b] backdrop-blur-lg z-10 p6 md:hidden 
     smooth-transition ${mobileMenuOpen?'left-0':'-left-full'}`}>
-    <p className='text-white'>KOZZMOS</p>
+    <p className='text-white px-4 text-3xl'>KOZZMOS</p>
     <NavLinks handleClick={()=>setMobileMenuOpen(false)}></NavLinks>
    </div>
    </>)
